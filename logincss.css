@@ -1,0 +1,14 @@
+.content{
+   background-color:blanchedalmond;
+   position: relative;
+   height: 470px;
+   width:370px;
+   left:400px;
+   top:50px;
+   justify-items: center;
+   padding: 20px;
+   font-size:25px;
+   font-family:fantasy;
+   border-radius: 20px;
+    
+}
