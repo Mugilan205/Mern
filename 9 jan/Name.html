@@ -1,0 +1,78 @@
+<html>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background: linear-gradient(135deg, #74ebd5, #9face6);
+            padding: 50px;
+        }
+
+        button {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+
+        #xx {
+            width: 410px;
+            height: 410px;
+            position: relative;
+            background: #f5f5f5;
+            margin: 20px auto;
+            border: 3px solid #ccc;
+            border-radius: 15px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        #animate {
+            width: 50px;
+            height: 50px;
+            position: absolute;
+            background: linear-gradient(135deg, #ff7eb3, #ff758c);
+            border-radius: 50%;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+            transition: transform 0.3s ease-in-out;
+        }
+    </style>
+
+    <body>
+        <h1>Interactive Animation</h1>
+        <p>Click the button to move the object diagonally!</p>
+        <button onclick="myMove()">Click Me</button>
+
+        <div id="xx">
+            <div id="animate"></div>
+        </div>
+
+        <script>
+            function myMove() {
+                let id = null;
+                const obj = document.getElementById("animate");
+                let move = 0;
+
+                clearInterval(id);
+
+                id = setInterval(frame, 5); 
+                function frame() {
+                    if (move === 350) {
+                        clearInterval(id);
+                        obj.style.transform = "scale(1.2) rotate(360deg)";
+                    } else {
+                        move++;
+                        obj.style.top = move + "px";
+                        obj.style.left = move + "px";
+                    }
+                }
+            }
+        </script>
+    </body>
+</html>

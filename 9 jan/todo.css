@@ -1,0 +1,137 @@
+
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+
+body {
+    text-align: center;
+}
+
+
+h1 {
+    margin: 50px 0;
+    font-size: 45px;
+    color: #2c3e50;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+
+img {
+    width: 30%;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+
+.list {
+    padding: 55px;
+}
+
+
+.form input {
+    width: 400px;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+    padding: 0 15px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+    transition: border-color 0.3s ease;
+}
+
+.form input:focus {
+    border-color: #28a745;
+    outline: none;
+    box-shadow: 0px 4px 8px rgba(40, 167, 69, 0.2);
+}
+
+.form input,
+.form button {
+    height: 50px;
+    font-size: 18px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 5px 0;
+}
+
+
+.form button {
+    width: 120px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.form button:hover {
+    background-color: #218838;
+    box-shadow: 0px 4px 10px rgba(40, 167, 69, 0.3);
+}
+
+.form button:active {
+    background-color: #1e7e34;
+}
+
+
+#todo {
+    width: 500px;
+    margin: 20px auto;
+    padding: 0;
+    list-style-type: none;
+}
+
+#todo li {
+    margin-bottom: 20px;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+#todo li:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.15);
+}
+
+#todo li::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 5px;
+    height: 100%;
+    background-color: #28a745;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+#todo li a {
+    float: right;
+    font-size: 18px;
+    color: #dc3545;
+    text-decoration: none;
+    margin-left: 15px;
+    transition: color 0.3s ease;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+#todo li a:hover {
+    color: #c82333;
+}
+
+#todo li a:active {
+    color: #bd2130;
+}

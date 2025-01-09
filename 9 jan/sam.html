@@ -1,0 +1,46 @@
+<html>
+    <head><style>
+        #tag1{
+            color: blue;
+            font-family: 'Courier New', Courier, monospace;
+            font-size: 20px;
+            font-weight: bold;
+            
+        }
+        #tag1:hover{
+          box-shadow: 0 0 10px 10px red;
+            font-family: 'Courier New', Courier, monospace;
+            font-size: 20px;
+            font-weight: bold;
+            
+        }
+        .marquee{
+            white-space: nowrap;
+            overflow: hidden;
+            box-sizing: border-box;
+            animation:travel 10s linear infinite;
+        }
+        @keyframes travel{
+            0%{
+                transform: translate(100%,0);
+            }
+            100%{
+                transform: translate(-100%,0);
+            }
+        }
+        </style>
+    </head>
+    <body>
+        <div class="marquee">
+            <p>TEXT 1</p>
+        </div>
+        <p id="tag1">Text One</p>
+        <p id="tag2">Text Two</p>
+        <script>
+            document.getElementById("tag2").style.color="red";
+            document.getElementById("tag2").style.fontFamily="monospace";
+            document.getElementById("tag2").style.fontSize="30px";
+        </script>
+       
+    </body>
+</html>
