@@ -1,0 +1,125 @@
+
+<html>
+    <head>
+        <title>Responsive Media Page</title>
+        <style>
+            body{
+                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                line-height: 1.6;
+                background: linear-gradient(120deg, #f0f4f8, #93c5fd);
+                margin: 0;
+                padding: 0;
+            }
+            header{
+                text-align: center;
+                padding: 60px 20px;
+                background: linear-gradient(145deg, #ff5722, #ffcc80);
+                border-radius: 35px;
+                color: white;
+            }
+            header h1{
+                font-size: 3.5rem;
+                margin-bottom: 20px;
+            }
+            header p{
+                font-size: 1.8rem;
+                color: #fff8e1;
+                margin-bottom: 25px;
+            }
+            header .mda{
+                background: #ffecb3;
+                color: #212121;
+                padding: 8px 16px;
+                text-decoration: none;
+                font-size: 1.2rem;
+                border-radius: 30px;
+                transition: transform 0.3s ease, box-shadow 0.5s ease;
+            }
+            header .mda:hover{
+                transform: translateY(-5px);
+                box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+            }
+            .grid-View{
+                display:grid;
+                grid-template-columns: repeat(3,1fr);
+                gap: 25px;
+                padding: 50px 30px;
+                max-width: 1150px;
+            }
+            .grid{
+                background:rgb(240, 220, 161);
+                padding: 18px;
+                border-radius: 18px;
+                text-align: center;
+                transition:transform 0.5s,box-shadow 0.7s;
+            }
+            .grid:hover{
+                transform:translateY(-7px);
+                box-shadow:0 12px 25px #333;
+            }
+            .grid h2{
+                font-size: 1.7rem;
+                margin-bottom:18px ;
+                color:rgb(96, 57, 132);
+            }
+            .grid p{
+                font-size: 1rem;
+                color: rgb(6, 6, 6);
+            }
+            footer{
+                text-align: center;
+                padding: 15px;
+                background: #263238;
+                color: #cfd8dc;
+                font-weight: bold;
+            }
+            footer a{
+                color: #ffcc80;
+                text-decoration: none;
+            }
+            footer a:hover{
+                text-decoration: underline;
+            }
+            @media (max-width: 768px){
+                header h1{
+                    font-size: 2.5rem;
+                }
+                header p{
+                    font-size: 1.5rem;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <h1>Landing Page</h1>
+            <p>Welcome to the responsive design showcase. Explore interactive elements and modern layouts!</p>
+            <a href="#" class="mda">Get Started</a>
+        </header>
+        <section class="grid-View">
+            <div class="grid">
+                <h2>Discover the First Option</h2>
+                <p>Explore our first feature with engaging content and an intuitive design.</p>
+            </div>
+            <div class="grid">
+                <h2>Discover the Second Option</h2>
+                <p>Delve into our second option offering robust tools and user-friendly features.</p>
+            </div>
+            <div class="grid">
+                <h2>Discover the Third Option</h2>
+                <p>Learn about our third solution, designed to optimize your experience effortlessly.</p>
+            </div>
+            <div class="grid">
+                <h2>Discover the Fourth Option</h2>
+                <p>Uncover the power of advanced customization with our fourth option.</p>
+            </div>
+            <div class="grid">
+                <h2>Discover the Fifth Option</h2>
+                <p>Enhance productivity with seamless integration through the fifth option.</p>
+            </div>
+        </section>
+        <footer>
+            <p>&copy; 2025 Responsive Design. All Rights Reserved. <a href="#">Terms and Conditions Apply</a></p>
+        </footer>
+    </body>
+</html>
