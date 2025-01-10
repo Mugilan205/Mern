@@ -1,4 +1,4 @@
 
-let name ="batman";
-let num =`my name ${name}`
+
 console.log(num)
+const num =10;
