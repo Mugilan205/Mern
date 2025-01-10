@@ -1,4 +1,2 @@
-
-
 console.log(num)
-const num =10;
+const num =10
