@@ -1,0 +1,93 @@
+
+        /* General Styles */
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Arial', sans-serif;
+            background: #ffffff; /* White background */
+            color: #000000; /* Teal color for text */
+            overflow-x: hidden;
+        }
+        header {
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background:  rgb(74, 108, 190);
+            color: #FFFFFF; /* White color for header text */
+            text-align: center;
+            position: relative;
+        }
+        header h1 {
+            font-size: 4em;
+            animation: fadeInDown 1.5s ease;
+            letter-spacing: 2px;
+        }
+        header p {
+            font-size: 1.5em;
+            margin-top: 10px;
+            animation: fadeInUp 1.5s ease;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        section {
+            margin: 50px 0;
+        }
+        section h2 {
+            text-align: center;
+            margin-bottom: 30px;
+            color: #5f749c;
+            font-size: 2.5em;
+        }
+        .glass-card {
+            background: rgba(90, 130, 186, 0.1); /* Transparent teal */
+            border-radius: 10px;
+            padding: 20px;
+            margin: 20px;
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+            border: 1px solid rgba(103, 134, 188, 0.3);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            cursor: pointer;
+        }
+        .glass-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 10px 20px rgba(0, 128, 128, 0.5); /* Soft teal glow */
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: #434c99; /* Teal background */
+            color: #FFFFFF; /* White text for footer */
+        }
+        /* Particle Background */
+        canvas {
+            position: fixed;
+            top: 0;
+            left: 0;
+            z-index: -1;
+        }
+        /* Animations */
+        @keyframes fadeInDown {
+            from {
+                opacity: 0;
+                transform: translateY(-50px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(50px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }

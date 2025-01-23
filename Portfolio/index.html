@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Creative Portfolio</title>
+    <link rel="stylesheet" href="port.css">
+    <script src="portjs" defer></script>
+    <style>
+        /* Add basic navigation styles for demonstration */
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #FFFFFF; /* White background */
+            color: #ccb17e; /* Teal color for text */
+            overflow-x: hidden;
+        }
+
+        header {
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background: linear-gradient(to right, rgba(0, 128, 128, 0.7), rgba(0, 128, 128, 0.9));
+            color: #FFFFFF; /* White text */
+            text-align: center;
+            position: relative;
+            padding: 0 20px;
+        }
+
+        header h1 {
+            font-size: 4em;
+            margin: 0;
+            animation: fadeInDown 1.5s ease;
+            letter-spacing: 2px;
+        }
+
+        header p {
+            font-size: 1.5em;
+            margin: 10px 0 20px;
+            animation: fadeInUp 1.5s ease;
+        }
+
+        /* Navigation Links Below Name */
+        .header-links {
+            margin-top: 20px;
+            display: flex;
+            gap: 15px;
+        }
+
+        .header-links a {
+            color: #FFD700; /* Gold color for links */
+            text-decoration: none;
+            font-size: 1.2em;
+            padding: 10px 15px;
+            border: 2px solid #FFD700;
+            border-radius: 25px;
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+        .header-links a:hover {
+            background-color: #FFD700;
+            color: #000000; /* Teal on hover */
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        section {
+            margin: 50px 0;
+        }
+
+        section h2 {
+            text-align: center;
+            margin-bottom: 30px;
+            color: #008080;
+            font-size: 2.5em;
+        }
+
+        .glass-card {
+            background: rgba(0, 128, 128, 0.1); /* Transparent teal */
+            border-radius: 10px;
+            padding: 20px;
+            margin: 20px;
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+            border: 1px solid rgba(0, 128, 128, 0.3);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .glass-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 10px 20px rgba(0, 128, 128, 0.5); /* Soft teal glow */
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: #008080; /* Teal background */
+            color: #FFFFFF; /* White text for footer */
+        }
+
+        /* Animations */
+        @keyframes fadeInDown {
+            from {
+                opacity: 0;
+                transform: translateY(-50px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(50px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div>
+            <h1>Mugilan V</h1>
+            <p>Building what others only imagine</p>
+        </div>
+        <!-- Navigation Links -->
+        <div class="header-links">
+            <a href="#career">Career Objective</a>
+            <a href="#projects">Projects</a>
+            <a href="#skills">Skills</a>
+            <a href="#contact">Contact</a>
+        </div>
+    </header>
+
+    <!-- Sections -->
+    <div class="container">
+        <section id="career">
+            <h2>Career Objective</h2>
+            <div class="glass-card">
+                <p>Seeking to innovate in the core electronics industry, specializing in VLSI and IoT, to bridge technology and human convenience.</p>
+            </div>
+        </section>
+        <section id="projects">
+            <h2>Projects</h2>
+            <div class="glass-card">
+                <h3>Theatre Reservation System</h3>
+                <p>A command-line application designed to simplify booking seats for various shows or performances.</p>
+            </div>
+            <div class="glass-card">
+                <h3>IoT-Based Smart Light Control</h3>
+                <p>Automates brightness adjustment for vehicle headlights to improve road safety.</p>
+            </div>
+        </section>
+        <section id="skills">
+            <h2>Skills</h2>
+            <div class="glass-card">
+                <ul>
+                    <li>Programming: C, Python, HTML, CSS</li>
+                    <li>Technical: Data Structures, IoT, VLSI</li>
+                    <li>Soft Skills: Collaboration, Critical Thinking</li>
+                </ul>
+            </div>
+        </section>
+        <section id="contact">
+            <h2>Contact</h2>
+            <div class="glass-card">
+                <p><strong>Email:</strong> mugilan.v@sece.ac.in</p>
+                <p><strong>Phone:</strong> +91 1234567890</p>
+                <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/mugilan-v-921917291/" target="_blank">https://www.linkedin.com/in/mugilan-v-921917291/</a></p>
+            </div>
+        </section>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2025 Mugilan V. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>
